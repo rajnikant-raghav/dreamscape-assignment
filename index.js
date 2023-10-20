@@ -22,7 +22,7 @@ let menuVisible = false;
 
 btn.addEventListener("click", () => {
   if (menuVisible) {
-    ul.style.right = "-150px";
+    ul.style.right = "-250px";
   } else {
     ul.style.right = "0px";
   }
