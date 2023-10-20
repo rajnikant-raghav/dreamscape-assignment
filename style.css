@@ -517,8 +517,8 @@ h3 {
   }
   .home_page img {
     top: 500px;
-    width: 400px;
-    right: 35px;
+    width: 380px;
+    right: 2px;
   }
   .home_page .left_container {
     margin-top: 0;
@@ -549,11 +549,16 @@ h3 {
   }
 }
 @media (max-width: 720px) {
+  .home_page .left_container h1 {
+    padding: 7px;
+    color: #fff;
+    font-size: 35px;
+  }
   .work_flow_container .work_flow_img img {
     content: url("./process-mobile.svg"); /* Change to the new image source */
   }
   .work_flow_container {
-    height: 300vh;
+    height: 220vh;
   }
   .advantage_card_container {
     width: 450%;
