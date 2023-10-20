@@ -1,0 +1,566 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------home section-------------------- */
+
+.home_container {
+  background-color: #215556;
+  background-image: url("https://docutrade.yodaplus.com/assets/img/0011.png");
+}
+.navbar {
+  z-index: 1;
+  width: 100%;
+  /* position: sticky; */
+  background-color:  #215556;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar img {
+  width: 155px;
+  margin-left: 30px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  background-color: rgb(23, 22, 22);
+}
+
+.home_page {
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+  padding: 150px 0px;
+}
+.home_page img {
+  position: absolute;
+  right: -80px;
+  top: 180px;
+  width: 660px;
+}
+.home_page .left_container {
+  width: 550px;
+  margin-left: 50px;
+}
+.home_page .left_container h1 {
+  color: #fff;
+  font-size: 40px;
+}
+.home_page .left_container span {
+  color: #ffc107;
+}
+.home_page .left_container button {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.home_page .left_container button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(219, 214, 65, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(10, 115, 80, 1) 100%
+  );
+}
+.home_container i {
+  border: 2px solid rgb(124, 126, 125);
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top: 35px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+/* ------------------- about section ---------------------- */
+#about {
+  height: 130vh;
+  background: #eafcff;
+}
+#about h2 {
+  padding: 50px 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+  margin-left: 10vw;
+  width: 80%;
+}
+.about_card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 0px 20px;
+  width: 88vw;
+  margin: auto;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.about_card .about_color_design {
+  width: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  padding: 3px;
+}
+.about_card p {
+  line-height: 30px;
+}
+.about_card span {
+  font-weight: bold;
+  color: #056639;
+}
+.about_card h1 {
+  font-weight: bold;
+  font-size: 45px;
+}
+.left {
+  width: 55%;
+}
+.right {
+  min-width: 30%;
+}
+.right img {
+  width: 90% !important;
+}
+
+/* ------------ -key-features section----------- - */
+
+#key_features {
+  background: url("https://docutrade.yodaplus.com/assets/img/features-bg.jpg");
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(234, 252, 255);
+  padding-top: 50px;
+  height: 100vh;
+}
+#key_features h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+#key_features .color_design {
+  width: 60px;
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  margin-top: 10px;
+  position: absolute;
+  left: 48%;
+}
+.card_container {
+  margin-top: 30px;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card_container .feature_card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 28%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_container .feature_card img {
+  width: 150px;
+  height: 150px;
+}
+.card_container .feature_card p {
+  color: #929694;
+  text-align: center;
+}
+
+/* -------------------- work_flow_container ------------------------ */
+.work_flow_container {
+  background: #0e3b43;
+  height: 170vh;
+}
+.work_flow_container h1 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.color_design {
+  width: 60px;
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  border: 1px solid rgba(219, 214, 65, 1);
+  position: absolute;
+  left: 47%;
+}
+.work_flow_container .work_flow_img {
+  margin-top: 50px;
+}
+.work_flow_container .work_flow_img img {
+  width: 95%;
+  position: absolute;
+  left: 2.5%;
+  border-radius: 30px;
+}
+
+/* ------------ advantage container --------------- */
+.advantage_container {
+  background: rgb(234, 252, 255);
+  padding: 40px 0px;
+}
+.advantage_container h1 {
+  padding: 100px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.advantage_container p {
+  padding: 20px 0px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.scroll_container {
+  padding: 20px 0px;
+  position: relative;
+  width: 100%;
+}
+.advantage_card_container {
+  position: relative;
+  padding: 0px 10px;
+  width: 240%;
+  display: flex;
+  justify-content: space-around;
+  /* overflow:hidden; */
+}
+.advantage_card {
+  border-radius: 10px;
+  padding: 20px 0px;
+  margin-top: 10px;
+  background-color: #fff;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(185, 223, 230);
+  padding-bottom: 40px;
+}
+.advantage_card:hover {
+  background-color: #0e3b43;
+  color: #fff;
+}
+.advantage_card .card_btn {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(185, 223, 230);
+  padding: 10px 0px;
+}
+.advantage_card .card_btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(219, 214, 65, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(10, 115, 80, 1) 100%
+  );
+}
+.advantage_card .card_btn span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.advantage_card p {
+  text-align: left;
+  line-height: 25px;
+}
+#left {
+  position: absolute;
+  left: 5px;
+  top: 200px;
+  cursor: pointer;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  z-index: 1;
+}
+#right {
+  position: absolute;
+  right: 5px;
+  top: 200px;
+  cursor: pointer;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  z-index: 1;
+}
+
+/* -----------------partnership section-------------------- */
+
+#partnership_container {
+  background-image: url("https://docutrade.yodaplus.com/assets/img/partnership-bg.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(5, 51, 59);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0px;
+}
+.partnership_left {
+  min-width: 30%;
+}
+.partnership_left img {
+  width: 300px;
+}
+.partnership_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.partnership_color_design {
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  width: 60px;
+}
+.partnership_right h2,
+h3 {
+  width: 80%;
+  color: #fff;
+}
+.partnership_right p {
+  width: 80%;
+  color: #fff;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* --------------Contact container---------------- */
+
+#contact_container {
+  background-image: url("https://docutrade.yodaplus.com/assets/img/contact-bg.png");
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(234, 252, 255);
+  background-size: 40%;
+  height: 100vh;
+}
+#contact_container h1 {
+  text-align: center;
+  padding: 30px 0px;
+}
+#contact_container p {
+  padding: 20px 0px;
+  text-align: center;
+  width: 35%;
+  margin: auto;
+}
+#contact_container form {
+  position: absolute;
+  left: 50%;
+    width: 30%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 20px 10px 40px 20px;
+}
+#contact_container form input {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#contact_container form button{
+  width: 95%;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 115, 80, 1) 0%,
+    rgba(122, 168, 72, 1) 70%,
+    rgba(219, 214, 65, 1) 100%
+  );
+  cursor: pointer;
+}
+
+/* ---------------footer section----------------- */
+.footer_container{
+  background-color:  rgb(212, 249, 255);
+}
+.footer_nav {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer_nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer_nav img{
+  width: 130px;
+  height: 30px;
+}
+
+@media (max-width: 1180px) {
+  .home_container {
+    height: 140vh;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 75px;
+    right: -150px;
+    background-color: #215556;
+  }
+  .navbar ul li {
+    display: block;
+    border-radius: 0px;
+  }
+  .home_container i {
+    display: block;
+  }
+  .home_page {
+    padding: 20px 0px;
+  }
+  .home_page img {
+    top: 500px;
+    width: 400px;
+    right: 35px;
+  }
+  .home_page .left_container {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  .about_card {
+    justify-content: center;
+    padding: 5px;
+  }
+  #about h2 {
+    font-size: 20px;
+  }
+  #about {
+    height: 250vh;
+  }
+  .card_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card_container .feature_card {
+    width: 80% !important;
+  }
+  #key_features {
+    height: 250vh;
+  }
+}
+@media (max-width: 720px) {
+  .work_flow_container .work_flow_img img {
+    content: url("./process-mobile.svg"); /* Change to the new image source */
+  }
+  .work_flow_container {
+    height: 340vh;
+  }
+  .advantage_card_container {
+    width: 450%;
+  }
+  #contact_container form{
+    width: 90%;
+    left: 2%;
+  }
+  #contact_container{
+    height: 135vh;
+  }
+}
