@@ -500,7 +500,9 @@ h3 {
   .navbar ul {
     position: absolute;
     top: 75px;
-    right: -250px;
+    /* right: -150px; */
+    right: 0px;
+    display: none;
     background-color: #215556;
   }
   .navbar ul li {
@@ -551,7 +553,7 @@ h3 {
     content: url("./process-mobile.svg"); /* Change to the new image source */
   }
   .work_flow_container {
-    height: 340vh;
+    height: 300vh;
   }
   .advantage_card_container {
     width: 450%;

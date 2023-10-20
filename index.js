@@ -22,9 +22,9 @@ let menuVisible = false;
 
 btn.addEventListener("click", () => {
   if (menuVisible) {
-    ul.style.right = "-250px";
+    ul.style.display = "none";
   } else {
-    ul.style.right = "0px";
+    ul.style.display = "block";
   }
   menuVisible = !menuVisible;
 });
