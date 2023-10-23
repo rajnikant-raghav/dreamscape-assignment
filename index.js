@@ -6,16 +6,19 @@ const scrollRightButton = document.getElementById("right");
 const scrollContainer = document.querySelector(".advantage_card_container");
 
 let scrollPosition = 0;
-const cardWidth = '350px'; // Adjust to your card width
+const cardWidth = 410; // Adjust to your card width
 
 scrollLeftButton.addEventListener("click", () => {
-  scrollPosition -= cardWidth;
-  scrollContainer.style.left = scrollPosition;
+  if(scrollPosition > 0)scrollPosition -= cardWidth;
+  scrollContainer.style.right = `${scrollPosition}px`;
 });
 
 scrollRightButton.addEventListener("click", () => {
-  scrollPosition += cardWidth;
-  scrollContainer.style.right = scrollPosition;
+  if(scrollPosition < 1600)
+    scrollPosition += cardWidth;
+    scrollContainer.style.right = `${scrollPosition}px`;
+ console.log(scrollContainer.style.right)
+  
 });
 
 let menuVisible = false;

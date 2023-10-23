@@ -285,7 +285,8 @@ body {
   width: 240%;
   display: flex;
   justify-content: space-around;
-  /* overflow:hidden; */
+  overflow:hidden;
+  background-color: #215556;
 }
 .advantage_card {
   border-radius: 10px;
@@ -312,7 +313,7 @@ body {
   background-color: rgb(185, 223, 230);
   padding: 10px 0px;
 }
-.advantage_card .card_btn:hover {
+.advantage_card:hover .card_btn {
   background: linear-gradient(
     90deg,
     rgba(219, 214, 65, 1) 0%,
